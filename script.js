@@ -4,13 +4,13 @@ const jogo = document.querySelector(".jogo");
 
 const jump = () =>{
   megaman.classList.add("jump");
-  megaman.src = "/img/megamanshoot.gif";
+  megaman.src = "img/megamanshoot.gif";
   megaman.style.width = "125px";
   megaman.style.height = "auto";
 
   setTimeout(() => {
     megaman.classList.remove("jump");
-    megaman.src = "/img/megaman.gif";
+    megaman.src = "img/megaman.gif";
     megaman.style.width = "";
     megaman.style.height = "";
 
