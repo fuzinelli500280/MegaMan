@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid #ccc;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.megaman {
+  bottom: 150px;
+  position: absolute;
+  width: 150px;
+}
+
+.jump {
+  animation: 1s megaman_animation infinite ease-out;
+}
+
+.enemy{
+  width: 180px;
+  position: absolute;
+  bottom: 150px;
+  right: 100px;
+  margin: -28px;
+  animation: 2s enemy_animation infinite linear;
+}
+
+.jogo{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes enemy_animation {
+  0% {
+    right: -220px;
+  } 
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes megaman_animation {
+  0% {
+    bottom: 150px;
+  }
+  25% {
+    bottom: 220px;
+  }
+   75% {
+    bottom: 220px;
+  }
+  100% {
+    bottom: 150px;
+  }
+}
